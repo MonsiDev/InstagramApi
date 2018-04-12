@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="slick/slick.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/instagram/slick/slick.css">
+<link rel="stylesheet" href="/instagram/style.css">
 <?php
   if(isset($_GET['un'])) {
     $baseUrl = 'https://instagram.com/' . $_GET['un'] . '?__a=1';
@@ -18,6 +18,7 @@
   $('#js-instagram').slick({
     infinite: true,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    autoplay: true
   });
 </script>
